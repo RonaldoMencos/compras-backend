@@ -1,0 +1,4 @@
+1. Descargar xampp, instalarlo y levantar el servicio de mysql y apache
+2. descargar git desde: https://github.com/RonaldoMencos/compras-backend
+3. importar la base de datos en mysql, desde la ruta localhost/phpmyadmin -> importar (el archivo esta en la carpeta compras-backend)
+4. abrir proyecto en visual code y ejecutar npm install y luego npm run develop
