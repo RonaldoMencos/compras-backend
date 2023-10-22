@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedors",
+  "info": {
+    "singularName": "proveedor",
+    "pluralName": "proveedors",
+    "displayName": "proveedor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_fiscal": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "proveedor_categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor-categoria.proveedor-categoria"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_compras",
+  "info": {
+    "singularName": "solicitud-compra",
+    "pluralName": "solicitud-compras",
+    "displayName": "solicitud_compra"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "solicitante": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empleado.empleado"
+    },
+    "aprobador_jefe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empleado.empleado"
+    },
+    "aprobador_gerente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empleado.empleado"
+    },
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "solicitud_compra_estado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solicitud-compra-estado.solicitud-compra-estado"
+    }
+  }
+}

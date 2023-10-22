@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedor_contactos",
+  "info": {
+    "singularName": "proveedor-contacto",
+    "pluralName": "proveedor-contactos",
+    "displayName": "proveedor_contacto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "cui": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "proveedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor.proveedor"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cotizacion_compras",
+  "info": {
+    "singularName": "cotizacion-compra",
+    "pluralName": "cotizacion-compras",
+    "displayName": "cotizacion_compra"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "adjunto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "seleccionada": {
+      "type": "boolean"
+    },
+    "solicitud_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solicitud-compra.solicitud-compra"
+    },
+    "proveedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor.proveedor"
+    }
+  }
+}

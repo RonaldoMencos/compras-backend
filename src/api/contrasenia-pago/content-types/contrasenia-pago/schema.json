@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contrasenia_pagos",
+  "info": {
+    "singularName": "contrasenia-pago",
+    "pluralName": "contrasenia-pagos",
+    "displayName": "contrasenia_pago"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "factura": {
+      "type": "string"
+    },
+    "fecha_factura": {
+      "type": "date"
+    },
+    "cuotas": {
+      "type": "integer"
+    },
+    "pago": {
+      "type": "decimal"
+    },
+    "orden_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::orden-compra.orden-compra"
+    }
+  }
+}

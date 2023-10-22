@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_compra_estados",
+  "info": {
+    "singularName": "solicitud-compra-estado",
+    "pluralName": "solicitud-compra-estados",
+    "displayName": "solicitud_compra_estado"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

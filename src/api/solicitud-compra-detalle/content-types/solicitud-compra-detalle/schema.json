@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_compra_detalles",
+  "info": {
+    "singularName": "solicitud-compra-detalle",
+    "pluralName": "solicitud-compra-detalles",
+    "displayName": "solicitud_compra_detalle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "solicitud_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::solicitud-compra.solicitud-compra"
+    },
+    "producto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producto.producto"
+    },
+    "cantidad": {
+      "type": "integer"
+    }
+  }
+}

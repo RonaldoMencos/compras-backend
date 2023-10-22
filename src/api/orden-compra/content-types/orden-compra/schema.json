@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compras",
+  "info": {
+    "singularName": "orden-compra",
+    "pluralName": "orden-compras",
+    "displayName": "orden_compra",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "cotizacion_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cotizacion-compra.cotizacion-compra"
+    },
+    "orden_compra_estado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::orden-compra-estado.orden-compra-estado"
+    },
+    "monto": {
+      "type": "decimal"
+    }
+  }
+}

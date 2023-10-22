@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos",
+  "info": {
+    "singularName": "producto",
+    "pluralName": "productos",
+    "displayName": "producto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "marca": {
+      "type": "string",
+      "required": true
+    },
+    "producto_categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::producto-categoria.producto-categoria"
+    }
+  }
+}

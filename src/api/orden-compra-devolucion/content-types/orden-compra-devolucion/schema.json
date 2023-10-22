@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compra_devolucions",
+  "info": {
+    "singularName": "orden-compra-devolucion",
+    "pluralName": "orden-compra-devolucions",
+    "displayName": "orden_compra_devolucion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "detalle": {
+      "type": "string"
+    },
+    "orden_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::orden-compra.orden-compra"
+    }
+  }
+}

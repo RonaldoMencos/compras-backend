@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compra_recepcion_estados",
+  "info": {
+    "singularName": "orden-compra-recepcion-estado",
+    "pluralName": "orden-compra-recepcion-estados",
+    "displayName": "ord_compra_recepcion_estado",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

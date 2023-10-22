@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedor_categorias",
+  "info": {
+    "singularName": "proveedor-categoria",
+    "pluralName": "proveedor-categorias",
+    "displayName": "proveedor_categoria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

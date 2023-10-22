@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orden_compra_recepcions",
+  "info": {
+    "singularName": "orden-compra-recepcion",
+    "pluralName": "orden-compra-recepcions",
+    "displayName": "orden_compra_recepcion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "detalle": {
+      "type": "text"
+    },
+    "orden_compra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::orden-compra.orden-compra"
+    },
+    "ord_compra_recepcion_estado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::orden-compra-recepcion-estado.orden-compra-recepcion-estado"
+    }
+  }
+}

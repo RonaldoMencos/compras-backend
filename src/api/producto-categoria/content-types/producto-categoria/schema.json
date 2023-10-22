@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producto_categorias",
+  "info": {
+    "singularName": "producto-categoria",
+    "pluralName": "producto-categorias",
+    "displayName": "producto_categoria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
